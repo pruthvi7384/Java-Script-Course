@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Js Modules</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!--Challenge 1-->
+    <div class="container-1 mt-5">
+        <h2>Challenge 1 : your Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDayes()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result">
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Challenge 2-->
+    <div class="container-2">
+        <h2>Challenge 2 : Cat Generator</h2>
+        <div class="flex-box-container-2">
+            <button class="btn btn-success" onclick="generatorCat()">Generate Cat</button>
+        </div>
+        <div class="flex-box-container-result-2" id="flex-cat-gen">
+            
+        </div>
+    </div>
+
+    <!--Challenge 3-->
+    <div class="container-3">
+        <h2>Challenge 3 : Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTNKl4bKaZufRk7DkQGewkv4cNYlQ0qpkdyA&usqp=CAU" height="150px" width="150px" alt="" onclick="rpsGame(this)">
+            <img id="paper" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAADwCAMAAABCI8pNAAAArlBMVEX////8/Px9fX3CwsKioqKAgICTk5Pz8/PJyclUVFSmpqZubm709PSbm5uqqqrn5+eIiIjq6uq0tLR2dnbZ2dn+Zmb/7u7/9PTh4eHvU1J4hITzWFi/yMi+vr6bg4OmmpqlNDMRERGpk5OVn5/n1dW3oqKmsLDp8fGdp6fPu7vg6Oi/qqqwubn15OTz+/t+ioqMc3JteXnfzc2kjo7/a2pJSUluZmZuHBsAAADws7J2uH4DAAADEUlEQVR4nO3dW1PaUBTFcQJyqUK4mZoYalulttKbtffv/8UK9QH3DvVFK3uts37jjIov/oecsIfAodUiNO7ssNh1I4RsndRr54fey1eXjdsg5K+Hm6RB8547+fbUx8pjedZv7U56Xjz5//JIlIRASQiUhOCfSSf4SVm7a5xVp104c5PkaXoIREkIlIRASQi2SZm1Tsrw2KSRdV5fjOD0bJJDMON5DGvJUVIgSkKgJATUSWU5vmtZrMZwSpuUW2/qyxzOoU1yNBAFoiQESkKgJATbpKm1LN5O4Yxt0oF1Xr87gDOySY6mh0CUhEBJCFJKYjiJD6yrejGA06FPchgOPIfw9KCkQJSEQEkIqB+X3EUAhisXpbUsViUem+QQriUlBaIkBEpCkFISw0A0s97XH2Z4bFJ/aHwsPg3h9G2SQ7iWlBSIkhAoCQH19OBeFaGXcgSS0lpSUiBKQqAkBCklEWxhwbHRSNZK68BTUiBKQqAkBCklMUwP3YlxVn2ewGmbJLf5S4thOxiHcC0pKRAlIVASAurpYW5dV1/mcI7ufe6B4F7yCNeSkgJREgIlIUgpieB1D1nbuq5O23DuvxijgSgQJSFQEgIlIVASgm3SsXVTrI7x2CT3TiCG9y85BJO4x7CWHCUFoiQEKSUxnMTdgxbDQ60bLW6Kci8jzcPYJIdwLSkpECUhUBKClJIYBqKOdVUvOnBe2CT7sT+bjxvYzwcOPYhNcgjXkpICURICJSGgnh7cnvCQG9kPbJKbLRgGIofhwHMITw9KCkRJCFJKYjiJ53k+y2e3X+sfNxvZb77f/nb3b3+/z/a9Z/1uNsltgQq5b+vQJjmEa0lJgSgJgZIQpJREMBBlbhsSyL1TuiZJe6cEpiQESkKgJAQpJRG8r5ZjK1qT5BGMrR7hWlJSIEpCoCQE1NPD3G5Dor1TAklpLSkpECUhUBICJSGgvr7k6OmUQJSEQEkIlISA+XEp61lfq4senIlJ8gjuJY9wLSkpENqnJr8fNfz42bwNwvzX5jX9Wb9p+nvHjRj2fZj8F38ArdqEi89RQjcAAAAASUVORK5CYII=" height="150px" width="150px" alt="" onclick="rpsGame(this)">
+            <img id="scissors" src="https://media.istockphoto.com/vectors/scissors-thin-line-icon-stationery-concept-office-or-school-tool-for-vector-id1225952306" height="150px" width="150px" alt="" onclick="rpsGame(this)">
+        </div> 
+    </div>
+
+    <!--Challenge 4-->
+    <div class="container-4">
+        <h2 id="change-my-color">Challenge 4 : Change the Color All Button</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+
+    <!---Challenge 5-->
+    <div class="container-5">
+        <h2>Challenge 5 : Blackjack</h2>
+        <h3><span id="blackjack-result">Let's Play</span></h3>
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You : <span id="your-blackjack-result">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer : <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn-danger mr-2" id="blackjack-deal-button">Deal</button>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<!--Challenge 6: Clock----->
+    <div class="container-6">
+        <h2>Challenge 6 : Clock</h2>
+        <div class="flex-box-clock-row-1">
+            <div class="clock_body">
+                <div class="date">
+                    <div>
+                        <h2 id="day"></h2>
+                     </div>
+                     <div>
+                         <h2 id="date"></h2>
+                     </div>
+                     <div>
+                        <h2 id="month"></h2>
+                     </div>
+                     <div>
+                         <h2 id="year"></h2>
+                     </div>
+                </div>
+                <div class="time">
+                    <div>
+                        <h2 id="hours"></h2>
+                    </div>
+                    <div>
+                       <h2>:</h2> 
+                    </div>
+                    <div>
+                        <h2 id="minuts"></h2>
+                    </div>
+                    <div>
+                        <h2>:</h2>
+                    </div>
+                    <div>
+                        <h2 id="seconds"></h2>
+                    </div>
+                    <div>
+                        <h2 id="pmam">
+
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!--Challege 7: Analog Clock-->
+     <div class="container-7">
+         <h2>Challenge 7 : Count Down</h2>
+         <h2 id="count_message"></h2>
+         <div class="flex-box-anlog-row">
+            <div class="count_down_body">
+                <div class="cout_date">
+                    <div>
+                        <h2 id="count_date"></h2>
+                    </div>
+                    <div>
+                        <h2>:</h2>
+                    </div>
+                    <div>
+                        <h2 id="count_hour"></h2>
+                    </div>
+                    <div>
+                        <h2>:</h2>
+                    </div>
+                    <div>
+                        <h2 id="count_minute"></h2>
+                    </div>
+                    <div>
+                        <h2>:</h2>
+                    </div>
+                    <div>
+                        <h2 id="count_second"></h2>
+                    </div>
+                </div>
+                <div class="cout_date">
+                    <div>
+                        <h5>Days</h>
+                    </div>
+                    &nbsp;
+                    <div>
+                        <h5>Hours</h5>
+                    </div>
+                    
+                    <div>
+                        <h5>Minutes</h5>
+                    </div>
+                    <div>
+                        <h5>Second</h5>
+                    </div>
+                </div>
+            </div>
+         </div>
+     </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
